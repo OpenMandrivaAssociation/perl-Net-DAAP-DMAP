@@ -1,21 +1,24 @@
-%define realname Net-DAAP-DMAP
+%define upstream_name    Net-DAAP-DMAP
+%define upstream_version 1.26
 
-Summary: Perl module for reading and writing DAAP structures
-Name: perl-Net-DAAP-DMAP
-Version: 1.26
-Release: %mkrel 4
-License: Artistic/GPL
-Group: Development/Perl
-URL: http://search.cpan.org/dist/Net-DAAP-DMAP/
-Source: http://search.cpan.org/CPAN/authors/id/R/RC/RCLAMP/Net-DAAP-DMAP-%{version}.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+Summary:    Perl module for reading and writing DAAP structures
+License:    Artistic/GPL
+Group:      Development/Perl
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://search.cpan.org/CPAN/authors/id/R/RC/RCLAMP/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Perl module for reading and writing DAAP structures.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 yes y | %{__perl} Makefile.PL INSTALLDIRS=vendor
