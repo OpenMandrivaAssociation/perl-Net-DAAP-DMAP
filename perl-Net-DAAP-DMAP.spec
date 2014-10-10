@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 1.27
-Release:	1
+Release:	2
 
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
