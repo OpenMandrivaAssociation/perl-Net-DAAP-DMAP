@@ -8,7 +8,7 @@ Release:	3
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/authors/id/R/RC/RCLAMP/Net-DAAP-DMAP-1.27.tar.gz
 
 BuildRequires:	perl-devel
