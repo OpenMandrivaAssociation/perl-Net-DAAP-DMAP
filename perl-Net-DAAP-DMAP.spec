@@ -2,14 +2,14 @@
 %define upstream_version 1.27
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.27
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/authors/id/R/RC/RCLAMP/Net-DAAP-DMAP-1.27.tar.gz
+Url:		https://metacpan.org/dist/Net-DAAP-DMAP
+Source0:	https://cpan.metacpan.org/authors/id/R/RC/RCLAMP/Net-DAAP-DMAP-1.27.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
