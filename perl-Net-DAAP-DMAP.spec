@@ -1,9 +1,7 @@
 %define upstream_name    Net-DAAP-DMAP
-%define upstream_version 1.27
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	1.27
+Release:	5
 
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
@@ -19,7 +17,7 @@ BuildArch:	noarch
 Perl module for reading and writing DAAP structures.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 yes y | perl Makefile.PL INSTALLDIRS=vendor
@@ -40,9 +38,7 @@ rm -rf %{buildroot}%{perl_vendorarch}
 %changelog
 * Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.260.0-1mdv2010.0
 + Revision: 404068
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.26-4mdv2009.0
+- rebuild using %1.27 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 1.26-4mdv2009.0
 + Revision: 258004
 - rebuild
 
