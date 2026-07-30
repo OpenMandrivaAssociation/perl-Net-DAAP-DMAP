@@ -2,7 +2,7 @@
 %define upstream_version 1.27
 Name:		perl-%{upstream_name}
 Version:	1.27
-Release:	2
+Release:	3
 
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
@@ -25,7 +25,7 @@ yes y | perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 #check
-#make test
+#make test || :
 
 %install
 %makeinstall_std
