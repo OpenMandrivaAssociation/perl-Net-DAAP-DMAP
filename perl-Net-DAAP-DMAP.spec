@@ -2,7 +2,7 @@
 %define upstream_version 1.27
 Name:		perl-%{upstream_name}
 Version:	1.27
-Release:	1
+Release:	2
 
 Summary:	Perl module for reading and writing DAAP structures
 License:	Artistic/GPL
@@ -18,7 +18,7 @@ BuildArch:	noarch
 Perl module for reading and writing DAAP structures.
 
 %prep
-%setup -q -n %{upstream_name}-%{version}
+%setup -q -n Net-DAAP-DMAP-1.27
 
 %build
 yes y | perl Makefile.PL INSTALLDIRS=vendor
